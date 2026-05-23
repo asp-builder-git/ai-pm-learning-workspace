@@ -1,0 +1,37 @@
+# 2026‑05‑23 — First Experiment: Trying to Shape the PM‑Agent Pipeline
+
+I was inspired to build this from an article I read on Substack about a multi-step Design pipeline. I was on a flight back from Seattle and I started sketching out what an “AI PM pipeline” might look like in my notebook. If each stage of product work was handled by a specialized agent. I wasn’t trying to get anything perfect — just trying to see how the pieces might fit together and help me reduce idea evaluation time and get to a solution recommendation based on my use case.
+
+## What I Tried
+- Defined PM stages that feel natural in a real workflow (problem framing → roadmap).
+- Gave each stage a clear output artifact.
+- Tried to imagine what a “handoff contract” between agents should look like.
+- Wrote the first draft of the pipeline table in the README.
+
+## What Surprised Me
+- It’s harder than I expected to define clean boundaries.  
+  PM work is fuzzy, and agents don’t like fuzziness.
+- Some stages overlap more than I realized (e.g., requirements vs. metrics).
+- The pipeline looks linear on paper, but real PM work is anything but linear.
+- I kept catching myself designing for “completeness” instead of “clarity.”
+
+## What Broke
+- My first attempt at agent definitions was way too abstract.
+- The pipeline felt like a waterfall process — not what I want.
+- I realized I need a Reviewer/Gatekeeper agent earlier than expected.
+
+## What I Learned
+- Agents need tighter constraints than humans do.
+- Handoff quality matters more than agent intelligence.
+- The pipeline should feel like a conversation, not a conveyor belt.
+- I need to start testing with actual prompts soon — not just structure.
+- Tested a 3‑agent mini‑pipeline on an active project with some pretty decent first-shot results
+
+
+## What I Want to Try Next
+- Write a stricter template for agent outputs.
+- Add a simple evaluation rubric for the Reviewer agent
+- Capture a few real outputs (even bad ones) to ground the design.
+
+This is the first real step in the journey.  
+It’s rough, but that’s the point — I want this repo to show the thinking, not just the results.

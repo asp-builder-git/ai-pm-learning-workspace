@@ -1,3 +1,23 @@
+# AI PM Learning Workspace — A Public Notebook
+
+This repo is my public notebook as I explore what it means to be an AI‑builder PM.  
+I’m not trying to publish a polished framework or a finished tool.  
+I’m documenting the messy middle — the experiments, the failures, the unexpected insights, and the things I’m still figuring out.
+
+My first focus is an 11‑agent PM pipeline: a chain of specialized agents that each produce a structured artifact, hand off to the next, and pause at gates for review.  
+It’s part workflow experiment, part systems‑thinking exercise, and part exploration of how AI can support real product work.
+
+Nothing here is final.  
+Everything is a work in progress.  
+This repo will evolve as I learn, break things, and refine my thinking.
+
+If you’re curious about how PM craft, AI agents, and builder‑style iteration intersect — welcome.
+
+
+
+-----
+
+
 # PM Agent Pipeline
 
 A file-artifact pipeline where 11 specialized PM agents produce structured outputs, hand off to each other, and pause at gates for your review.
