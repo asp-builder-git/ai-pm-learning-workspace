@@ -5,7 +5,7 @@ A file-artifact pipeline where 11 specialized PM agents produce structured outpu
 ## Quick Start
 
 ```
-/pm-pipeline init "Reduce VM onboarding time for CORE tools"
+/pm-pipeline init "Reduce user onboarding time for program signup"
 ```
 
 This creates the folder structure, `pipeline.md`, and `gates.md` in your current directory. Then:
@@ -137,7 +137,7 @@ Agents calibrate their judgment to the mode — a pilot's Solution Assessor won'
 
 ## Key Design Decisions
 
-- **File-based handoff**: Every tool (Claude Code, Kiro, MeshClaw) can read/write files. No infrastructure needed.
+- **File-based handoff**: Every tool (Claude Code, Kiro, OpenClaw) can read/write files. No infrastructure needed.
 - **Gates are human checkpoints**: Agents never proceed past a gate without your approval.
 - **Agents critique, not just produce**: The Assessor rejects bad solutions. The Design Lead sends work back.
 - **One agent per concern**: Focused personas produce sharper output than a single mega-agent.
