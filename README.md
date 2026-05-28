@@ -11,7 +11,5 @@ A public notebook exploring AI-builder PM craft. Experiments, failures, and fram
 | `pm-agent-pipeline/agents/` | Individual agent briefs and definitions |
 | `pm-agent-pipeline/agent-evaluations/` | Completed pipeline run outputs |
 | `pm-agent-pipeline/templates/` | Pipeline stages and gate templates |
-| `Idea.md` | Original concept |
-| `architecture-assessment.md` | Architecture assessment |
 
 Nothing here is final. Everything evolves.

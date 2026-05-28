@@ -4,8 +4,10 @@ Multi-agent pipeline for product evaluation. Each agent inspects an idea from on
 
 ## Structure
 
-| Directory | Contents |
-|-----------|----------|
+| File / Directory | Contents |
+|------------------|----------|
+| `Idea.md` | Original concept and motivation |
+| `architecture-assessment.md` | Architecture assessment |
 | `agents/` | Individual agent briefs (definitions, personas, evaluation criteria) |
 | `agent-evaluations/` | Stored outputs from completed pipeline runs |
 | `templates/` | Pipeline stage definitions and go/no-go gate criteria |
