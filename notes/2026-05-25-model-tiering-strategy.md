@@ -1,4 +1,4 @@
-# 2026‑05‑25 — Thinking Through Model Tiering Strategy
+# Thinking Through Model Tiering Strategy
 
 Today I explored how to structure a tiered model strategy for my AI PM workflows. The goal was to balance cost, speed, and depth without over‑engineering the routing logic.
 
@@ -19,5 +19,3 @@ Today I explored how to structure a tiered model strategy for my AI PM workflows
 - Test how different agents behave under different tiers
 - Document failure modes when using cheaper models
 - Explore automated routing based on task type
-
-This feels like a foundational piece of my AI PM toolkit — not because it’s perfect, but because it forces me to think about constraints, tradeoffs, and system behavior.
