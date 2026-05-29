@@ -49,5 +49,21 @@ out/
 $RECYCLE.BIN/
 System Volume Information/
 
-# --- Personal Notes You Don’t Want Public (optional) ---
-# private/
+# --- Pipeline Run Outputs (private project artifacts) ---
+pm-agent-pipeline/01-discovery/
+pm-agent-pipeline/02-validation/
+pm-agent-pipeline/03-current-state/
+pm-agent-pipeline/04-solutions/
+pm-agent-pipeline/05-assessment/
+pm-agent-pipeline/06-design/
+pm-agent-pipeline/07-design-review/
+pm-agent-pipeline/08-project-plan/
+pm-agent-pipeline/09-gtm/
+pm-agent-pipeline/10-feedback/
+pm-agent-pipeline/11-communications/
+pm-agent-pipeline/Idea.md
+pm-agent-pipeline/gates.md
+pm-agent-pipeline/pipeline.md
+pm-agent-pipeline/source-docs/
+pm-agent-pipeline/architecture-assessment.md
+pm-agent-pipeline/agent-evaluations/
