@@ -3,6 +3,9 @@
 **From idea to product plan in one command.**
 *11 AI agents produce your spec, strategy, and launch plan — so you can skip the busywork and build.*
 
+**🌊 NEW: Deep-dive mode** — after the initial pipeline, pick any stage for 2-3x deeper analysis.
+*Competitive teardowns, quantified risks, screen-by-screen specs, sprint breakdowns, full launch playbooks.*
+
 <p align="left">
   <a href="https://github.com/asp-builder-git/ai-pm-learning-workspace/stargazers"><img src="https://img.shields.io/github/stars/asp-builder-git/ai-pm-learning-workspace?style=flat-square" alt="GitHub Stars"></a>
   <a href="../LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
@@ -127,6 +130,34 @@ pm-pipeline next         # next agent proceeds
 | 09 | GTM Designer | How do we launch it? |
 | 10 | Feedback Manager | What did we learn? |
 | 11 | Communications Specialist | How do we pitch it? |
+
+## 🌊 Deep-Dive Mode
+
+After the initial pipeline run, pick any stage for 2-3x deeper analysis.
+
+**Usage:**
+```
+delve_stage(projectDir="./my-project", stage="opportunity-validator")
+```
+
+| Stage | Deep-Dive Produces |
+|-------|-------------------|
+| Problem Discovery | Validated problems, 5-Whys, personas, evidence triangulation |
+| Opportunity Validation | Full competitive teardown, bottoms-up sizing, unit economics |
+| Current State | Feature matrix (20+ rows), trend analysis, white space map |
+| Solution Generation | Architecture comparison, trade-off matrix, prototype spec |
+| Solution Assessment | Quantified risks, sensitivity analysis, decision tree |
+| UX Design | Screen-by-screen specs, interaction flows, accessibility audit |
+| Design Review | Heuristic evaluation, UX benchmark, user testing plan |
+| Project Plan | Sprint-by-sprint breakdown, dependency graph, resource plan |
+| GTM | Channel strategy, messaging matrix, launch playbook |
+| Feedback Setup | Metrics tree, survey instruments, analytics plan |
+| Communications | Asset templates, channel copy, engagement playbook |
+
+Each deep-dive produces 4 files in a `deep/` subfolder. Run multiple deep-dives
+across stages and cross-reference insights.
+
+---
 
 ## How It Works
 

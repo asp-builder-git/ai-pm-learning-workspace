@@ -1,7 +1,7 @@
 {
   "name": "pm-pipeline-mcp",
-  "version": "0.1.0",
-  "description": "MCP server for the PM Agent Pipeline — generate product briefs in Claude/Cursor with 11 AI agents",
+  "version": "0.2.0",
+  "description": "MCP server for the PM Agent Pipeline — generate product briefs + deep-dive on any stage for 2-3x deeper analysis",
   "type": "module",
   "main": "index.js",
   "bin": {
@@ -24,7 +24,9 @@
     "product-development",
     "pipeline",
     "pm",
-    "product-brief"
+    "product-brief",
+    "deep-dive",
+    "competitive-analysis"
   ],
   "files": [
     "index.js",
