@@ -3,6 +3,13 @@
 **From idea to product plan in one command.**
 *11 AI agents produce your spec, strategy, and launch plan — so you can skip the busywork and build.*
 
+<p align="left">
+  <a href="https://github.com/asp-builder-git/ai-pm-learning-workspace/stargazers"><img src="https://img.shields.io/github/stars/asp-builder-git/ai-pm-learning-workspace?style=flat-square" alt="GitHub Stars"></a>
+  <a href="../LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
+  <a href="#"><img src="https://img.shields.io/badge/version-0.1.0-blue?style=flat-square" alt="Version"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Claude%20Code-ready-brightgreen?style=flat-square" alt="Claude Code"></a>
+</p>
+
 ## Structure
 
 | File / Directory | Contents |
