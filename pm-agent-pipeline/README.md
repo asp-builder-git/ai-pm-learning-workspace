@@ -10,32 +10,85 @@
   <a href="#"><img src="https://img.shields.io/badge/Claude%20Code-ready-brightgreen?style=flat-square" alt="Claude Code"></a>
 </p>
 
-## Structure
+Every product starts as a hunch. The PM Agent Pipeline turns that hunch into a structured product brief — problem statements, opportunity sizing, solution options, risk register, and a launch plan — in one automated run.
 
-| File / Directory | Contents |
-|------------------|----------|
-| `Idea.md` | Original concept and motivation |
-| `architecture-assessment.md` | Architecture assessment |
-| `agents/` | Individual agent briefs (definitions, personas, evaluation criteria) |
-| `agent-evaluations/` | Stored outputs from completed pipeline runs |
-| `templates/` | Pipeline stage definitions and go/no-go gate criteria |
+No meetings. No templates to fill. No product manager on retainer.
+
+## Quick Start
+
+```bash
+# Drop your idea into Idea.md, then run:
+pm-pipeline init "Reduce user onboarding time for new signups"
+
+# Run agents in sequence:
+pm-pipeline next    # runs the next agent
+pm-pipeline next    # keeps going until hitting a gate
+
+# Review and approve:
+pm-pipeline approve 1    # marks Gate 1 as approved
+pm-pipeline next         # next agent proceeds
+```
+
+*(CLI in development — currently the pipeline runs manually via agent prompts. See [How to Run](docs/usage.md) for current instructions.)*
 
 ## Pipeline Stages
 
-| Agent | Role |
-|-------|------|
-| Problem Discoverer | What's the actual problem? |
-| Current State Expert | What exists today? |
-| Opportunity Validator | Is it worth solving? |
-| Solution Generator | What are the options? |
-| Solution Assessor | Which option wins? |
-| UX Design Lead | How does it feel? |
-| Communications Specialist | How do we pitch it? |
-| GTM Designer | How do we launch it? |
-| Feedback Manager | What did we learn? |
+| # | Agent | Question it answers |
+|---|-------|---------------------|
+| 01 | Problem Discoverer | What's the actual problem? |
+| 02 | Opportunity Validator | Is it worth solving? |
+| 03 | Current State Expert | What exists today? |
+| 04 | Solution Generator | What are the options? |
+| 05 | Solution Assessor | Which option wins? |
+| 06 | UX Designer | How does it feel? |
+| 07 | UX Design Lead | Is it good enough? |
+| 08 | Project Manager | How do we build it? |
+| 09 | GTM Designer | How do we launch it? |
+| 10 | Feedback Manager | What did we learn? |
+| 11 | Communications Specialist | How do we pitch it? |
 
 ## How It Works
 
-1. Drop an idea into the pipeline
-2. Each agent inspects from its angle
-3. Output: a formatted brief with verdict, risks, and next steps
+**The pipeline runs on a gate system.** Each agent produces artifacts, then stops. You review. If it passes the gate, the next agent picks up where the last one left off.
+
+```
+Idea → [Agent 1] → artifacts → [Gate 1: You review]
+                                    ↓ approved
+                              [Agent 2] → artifacts → [Gate 2: You review]
+                                                          ↓ approved
+                                                    ...continues
+```
+
+**Key behaviors:**
+
+- **Gates are human checkpoints** — agents never proceed without your approval
+- **Agents read upstream** — each agent sees the outputs of previous stages
+- **Critique loops** — the Solution Assessor rejects weak options, the Design Lead sends work back for revisions
+- **One agent per concern** — focused personas produce sharper output than a single mega-agent
+
+## Project Modes
+
+| Mode | When | Horizon | Quality bar |
+|------|------|---------|-------------|
+| `pilot` | Testing an idea | Days | Speed over polish |
+| `mvp` | Shipping to real users | 2-6 weeks | Balanced |
+| `platform` | Long-lived investment | Months | High bar |
+
+Agents calibrate their judgment to the mode — a pilot's assessment won't demand production-grade architecture.
+
+## Project Structure
+
+```
+your-project/
+├── agents/                  ← Agent definitions (personas + evaluation criteria)
+├── templates/               ← Pipeline stage templates and gate criteria
+├── agent-evaluations/       ← Completed pipeline run outputs
+└── README.md                ← This file
+```
+
+## Design Philosophy
+
+- **File-based handoff** — every AI tool reads/writes files. No infrastructure needed.
+- **Gated autonomy** — agents act, you decide. No handoffs without human review.
+- **Mode-aware** — same pipeline, different rigor. Pilot vs platform get different treatment.
+- **Harness-agnostic** — works in Claude Code, Kiro, Cursor, OpenClaw, any AI that reads files.
