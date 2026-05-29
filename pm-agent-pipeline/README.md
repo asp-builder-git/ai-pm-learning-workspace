@@ -1,6 +1,7 @@
 # PM Agent Pipeline
 
-Multi-agent pipeline for product evaluation. Each agent inspects an idea from one angle and passes findings to the next stage.
+**From idea to product plan in one command.**
+*11 AI agents produce your spec, strategy, and launch plan — so you can skip the busywork and build.*
 
 ## Structure
 
