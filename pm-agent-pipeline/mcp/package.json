@@ -1,13 +1,39 @@
 {
   "name": "pm-pipeline-mcp",
   "version": "0.1.0",
-  "description": "MCP server for the PM Agent Pipeline — generate product briefs in Claude/Cursor",
+  "description": "MCP server for the PM Agent Pipeline — generate product briefs in Claude/Cursor with 11 AI agents",
   "type": "module",
   "main": "index.js",
   "bin": {
     "pm-pipeline-mcp": "./index.js"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asp-builder-git/ai-pm-learning-workspace.git"
+  },
+  "homepage": "https://github.com/asp-builder-git/ai-pm-learning-workspace/tree/main/pm-agent-pipeline/mcp",
+  "bugs": {
+    "url": "https://github.com/asp-builder-git/ai-pm-learning-workspace/issues"
+  },
+  "keywords": [
+    "mcp",
+    "product-management",
+    "ai-agents",
+    "claude",
+    "product-development",
+    "pipeline",
+    "pm",
+    "product-brief"
+  ],
+  "files": [
+    "index.js",
+    "package.json"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

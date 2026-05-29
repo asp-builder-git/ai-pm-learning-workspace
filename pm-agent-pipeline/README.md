@@ -46,9 +46,22 @@ from problem discovery through to a launch plan and communications calendar.
 
 Run the pipeline directly from your chat — no terminal work:
 
-```bash
-# Claude Desktop
-# Add to claude_desktop_config.json:
+**Using npx** (recommended — no clone needed):
+
+```json
+{
+  "mcpServers": {
+    "pm-pipeline": {
+      "command": "npx",
+      "args": ["-y", "pm-pipeline-mcp"]
+    }
+  }
+}
+```
+
+**Using local path** (no npm needed):
+
+```json
 {
   "mcpServers": {
     "pm-pipeline": {
