@@ -14,6 +14,30 @@ Every product starts as a hunch. The PM Agent Pipeline turns that hunch into a s
 
 No meetings. No templates to fill. No product manager on retainer.
 
+## 🎬 See It In Action
+
+Run the demo to see what the pipeline produces — no AI calls, no setup:
+
+```bash
+node scripts/demo.js
+# Creates ./__demo__/ — 20+ files, 11 stages, pre-built for you
+```
+
+Browse the output:
+
+```bash
+cd __demo__
+cat gates.md          # check which gates are approved/pending
+cat 09-gtm/launch-plan.md  # see a sample output
+cat 01-discovery/problems.md  # see ranked problem statements
+```
+
+The demo uses **"Build a habit tracking app"** as the sample idea — something every PM
+and indie hacker has thought about. You'll see real-looking outputs for all 11 stages:
+from problem discovery through to a launch plan and communications calendar.
+
+![Demo in action](https://img.shields.io/badge/demo-ready-brightgreen)
+
 ## Quick Start
 
 ```bash
