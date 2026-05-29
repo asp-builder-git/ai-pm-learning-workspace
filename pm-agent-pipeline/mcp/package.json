@@ -1,0 +1,13 @@
+{
+  "name": "pm-pipeline-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the PM Agent Pipeline — generate product briefs in Claude/Cursor",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "pm-pipeline-mcp": "./index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}

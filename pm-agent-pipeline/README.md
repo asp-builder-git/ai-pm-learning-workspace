@@ -8,6 +8,8 @@
   <a href="../LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
   <a href="#"><img src="https://img.shields.io/badge/version-0.1.0-blue?style=flat-square" alt="Version"></a>
   <a href="#"><img src="https://img.shields.io/badge/Claude%20Code-ready-brightgreen?style=flat-square" alt="Claude Code"></a>
+  <a href="#mcp-install"><img src="https://img.shields.io/badge/MCP-ready-blue?style=flat-square" alt="MCP"></a>
+  <a href="#skills-install"><img src="https://img.shields.io/badge/Skills-ready-orange?style=flat-square" alt="Skills"></a>
 </p>
 
 Every product starts as a hunch. The PM Agent Pipeline turns that hunch into a structured product brief — problem statements, opportunity sizing, solution options, risk register, and a launch plan — in one automated run.
@@ -37,6 +39,48 @@ and indie hacker has thought about. You'll see real-looking outputs for all 11 s
 from problem discovery through to a launch plan and communications calendar.
 
 ![Demo in action](https://img.shields.io/badge/demo-ready-brightgreen)
+
+## 🚀 Install
+
+### Option 1: MCP Server (Claude Desktop, Claude Code, Cursor) {#mcp-install}
+
+Run the pipeline directly from your chat — no terminal work:
+
+```bash
+# Claude Desktop
+# Add to claude_desktop_config.json:
+{
+  "mcpServers": {
+    "pm-pipeline": {
+      "command": "node",
+      "args": ["/path/to/pm-agent-pipeline/mcp/index.js"]
+    }
+  }
+}
+```
+
+Then in Claude:
+> "Plan my product" → *Claude calls your PM Agent Pipeline tool*
+
+### Option 2: Skills (Claude Code, Cursor, OpenClaw) {#skills-install}
+
+Each pipeline stage is a standalone skill — install just what you need:
+
+```bash
+# Clone the repo
+mkdir -p .claude/skills
+cp -r pm-agent-pipeline/skills/* .claude/skills/
+```
+
+Skills auto-load when Claude detects relevant tasks. Lightweight (~50 tokens each),
+zero infrastructure.
+
+### Option 3: Quick Demo
+
+```bash
+node scripts/demo.js
+# See a complete 11-stage product brief in 6 seconds
+```
 
 ## Quick Start
 
